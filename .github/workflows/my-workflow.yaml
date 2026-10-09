@@ -10,8 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - run: make setup
-      - run: make lint
-      - run: make test
-
+      - name: Setup
+        run: make setup
       
+      - name: Linter
+        run: make lint
+
+      - name: Tests
+        run: make test
+
