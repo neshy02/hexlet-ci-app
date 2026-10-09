@@ -10,6 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - run: npm install -g pnpm
+      
       - name: Setup
         run: make setup
       
